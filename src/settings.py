@@ -7,6 +7,8 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+import os
+
 BOT_NAME = "src"
 
 SPIDER_MODULES = ["src.spiders"]
@@ -86,6 +88,11 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = "httpcache"
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
+
+# Enable and configure Retry option
+#RETRY_ENABLED = True
+#RETRY_TIMES = 10
+#RETRY_HTTP_CODES = [301, 500, 502, 503, 504, 507, 408, 403]
 
 # Set settings whose default value is deprecated to a future-proof value
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
