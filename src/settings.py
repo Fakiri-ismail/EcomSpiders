@@ -89,7 +89,7 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
-# Enable and configure Retry option
+# Enable and configure Retry options
 #RETRY_ENABLED = True
 #RETRY_TIMES = 10
 #RETRY_HTTP_CODES = [301, 500, 502, 503, 504, 507, 408, 403]
@@ -101,3 +101,7 @@ FEED_EXPORT_ENCODING = "utf-8"
 
 # Configure LOG
 LOG_FORMAT = '\x1b[0;0;34m%(asctime)s\x1b[0;0m \x1b[0;0;36m[%(name)s]\x1b[0;0m \x1b[0;0;31m%(levelname)s\x1b[0;0m: %(message)s'
+
+# Configure DIRECTORY
+BASE_DIR = os.path.dirname(__file__)
+RESOURCES_DIRECTORY = os.path.join(BASE_DIR, 'resources')
