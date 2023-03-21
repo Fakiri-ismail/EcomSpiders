@@ -105,3 +105,4 @@ LOG_FORMAT = '\x1b[0;0;34m%(asctime)s\x1b[0;0m \x1b[0;0;36m[%(name)s]\x1b[0;0m \
 # Configure DIRECTORY
 BASE_DIR = os.path.dirname(__file__)
 RESOURCES_DIRECTORY = os.path.join(BASE_DIR, 'resources')
+OUTPUT_DIRECTORY = os.path.join(BASE_DIR, 'output')
