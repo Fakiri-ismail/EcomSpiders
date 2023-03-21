@@ -1,5 +1,5 @@
 import os, json, csv
-from src.settings import RESOURCES_DIRECTORY
+from src.settings import RESOURCES_DIRECTORY, OUTPUT_DIRECTORY
 from random import choice
 
 
@@ -19,7 +19,9 @@ def random_userAgent(software=None):
             userAgents_list += userAgent
     return choice(userAgents_list)
 
-"""
+def split_between(string: str, a: str, b: str):
+    return string.split(a)[-1].split(b)[0]
+
 
 def to_csv_file(item, file_name='default.csv'):
     path = os.path.join(OUTPUT_DIRECTORY, file_name)
@@ -35,4 +37,3 @@ def remove_file(file_name='default.csv'):
     if os.path.exists(filePath):
         os.remove(filePath)
         
-"""
